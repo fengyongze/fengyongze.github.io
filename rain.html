@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>RainDemo</title>
+    <style>
+        .bg {
+            background-color: #000;
+            overflow: hidden;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+        }
+        
+        div {
+            position: absolute;
+            width: 0;
+            height: 0;
+            text-align: center;
+        }
+        
+        .clicked {
+            position: absolute;
+            background-color: white;
+            height: 80%;
+            width: 40%;
+            left: 50%;
+            top: 50%;
+            margin-left: -20%;
+            margin-top: -20%;
+            animation: change 2s linear;
+            -webkit-animation: change 2s linear;
+            -moz-animation: change 2s linear;
+            -o-animation: change 2s linear;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px #888888;
+            -moz-border-radius: 2px 2px 5px #888888;
+        }
+        
+        h1 {
+            font: bold 30px Consolas, Monaco, monospace;
+            border-right: 3px solid;
+            width: 6ch;
+            overflow: hidden;
+            animation: typing 4s steps(6, end), blink-caret .5s step-end infinite alternate;
+            -webkit-animation: typing 4s steps(6, end), blink-caret .5s step-end infinite alternate;
+            -moz-animation: typing 4s steps(6, end), blink-caret .5s step-end infinite alternate;
+            -o-animation: typing 4s steps(6, end), blink-caret .5s step-end infinite alternate;
+        }
+        
+        #box span {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            -webkit-animation: img 1s linear;
+            -moz-animation: img 1s linear;
+            -o-animation: img 1s linear;
+        }
+        
+        #box span:hover {
+            transform: scale(1.6);
+        }
+        
+        #img1 {
+            background-image: url(images/1.jpg);
+        }
+        
+        #img2 {
+            background-image: url(images/2.jpg);
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        
+        #img3 {
+            background-image: url(images/3.jpg);
+        }
+        
+        .hidden {
+            display: none !important;
+        }
+        
+        @media (max-width:768px) {
+            .clicked {
+                height: 50%;
+                width: 60%;
+                left: 50%;
+                top: 50%;
+                margin-left: -30%;
+                margin-top: -40%;
+            }
+            #box span {
+                width: 40px;
+                height: 40px;
+            }
+            #img2 {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+        
+        @media (min-width:768px) and (max-width:960px) {
+            .clicked {
+                height: 60%;
+                width: 60%;
+                left: 50%;
+                top: 50%;
+                margin-left: -30%;
+                margin-top: -40%;
+            }
+            #box span {
+                width: 100px;
+                height: 100px;
+            }
+            #img2 {
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+        }
+        
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+        }
+        
+        @-webkit-keyframes typing {
+            from {
+                width: 0;
+            }
+        }
+        
+        @-moz-keyframes typing {
+            from {
+                width: 0;
+            }
+        }
+        
+        @-o-keyframes typing {
+            from {
+                width: 0;
+            }
+        }
+        
+        @keyframes blink-caret {
+            50% {
+                border-color: transparent;
+            }
+        }
+        
+        @-webkit-keyframes blink-caret {
+            50% {
+                border-color: transparent;
+            }
+        }
+        
+        @-moz-keyframes blink-caret {
+            50% {
+                border-color: transparent;
+            }
+        }
+        
+        @-o-keyframes blink-caret {
+            50% {
+                border-color: transparent;
+            }
+        }
+        
+        @keyframes change {
+            0% {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 0;
+                height: 0;
+                opacity: 0;
+            }
+            100% {
+                transform: rotate(360deg);
+                opacity: 1;
+            }
+        }
+        
+        @-webkit-keyframes change {
+            0% {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 0;
+                height: 0;
+                opacity: 0;
+            }
+            100% {
+                transform: rotate(360deg);
+                opacity: 1;
+            }
+        }
+        
+        @-moz-keyframes change {
+            0% {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 0;
+                height: 0;
+                opacity: 0;
+            }
+            100% {
+                transform: rotate(360deg);
+                opacity: 1;
+            }
+        }
+        
+        @-o-keyframes change {
+            0% {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 0;
+                height: 0;
+            }
+            100% {
+                transform: rotate(360deg);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes img {
+            0% {
+                width: 0;
+                height: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @-webkit-keyframes img {
+            0% {
+                width: 0;
+                height: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @-o-keyframes img {
+            0% {
+                width: 0;
+                height: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @-moz-keyframes img {
+            0% {
+                width: 0;
+                height: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+
+<body class="bg" id="bg">
+    <canvas id="rain">你的浏览器不支持，请更换浏览器</canvas>
+    <div id="box">
+        <h1 class="hidden" id="main">陈佩虹我爱你</h1>
+        <span class="hidden" id="img1"></span>
+        <span class="hidden" id="img2"></span>
+        <span class="hidden" id="img3"></span>
+    </div>
+    <video loop id="video">
+        <source src="http://ysc.yisell.com/yisell/ycys2015718158529188/sound/yisell_sound_201408081318222230_66366.mp3">
+    </video>
+    <script src="javascripts/rain.js"></script>
+    <script>
+        var bg = document.getElementById("bg");
+        var box = document.getElementById("box");
+        var main = document.getElementById("main");
+        var video = document.getElementById("video");
+        var img1 = document.getElementById("img1");
+        var img2 = document.getElementById("img2");
+        var img3 = document.getElementById("img3");
+        bg.onclick = function(e) {
+            box.setAttribute("class", "clicked");
+        }
+
+        function whichTransitionEvent() {
+            var t;
+            var transitionsEnd = {
+                "WebkitTransition": "webkitAnimationEnd",
+                "OTransition": "oAnimationEnd",
+                "MozTransition": "mozAnimationEnd",
+                "transition": "AnimationEnd",
+            }
+            for (t in transitionsEnd) {
+                if (box.style[t] !== undefined) {
+                    return transitionsEnd[t];
+                }
+            }
+        }
+
+        function whichTransitionEventStart() {
+            var t;
+            var transitionsStrat = {
+                "WebkitTransition": "webkitAnimationStart",
+                "OTransition": "oAnimationStart",
+                "MozTransition": "mozAnimationStart",
+                "transition": "AnimationStart",
+            }
+            for (t in transitionsStrat) {
+                if (box.style[t] !== undefined) {
+                    return transitionsStrat[t];
+                }
+            }
+        }
+        var transitionEventStart = whichTransitionEventStart();
+        var transitionEventEnd = whichTransitionEvent();
+        box.addEventListener(transitionEventEnd, function() {
+            main.removeAttribute("class");
+        });
+        main.addEventListener(transitionEventStart, function() {
+            video.play();
+        }, false);
+        main.addEventListener(transitionEventEnd, function() {
+            video.pause();
+            img1.removeAttribute("class");
+            img2.removeAttribute("class");
+            img3.removeAttribute("class");
+        }, false);
+
+    </script>
+</body>
+
+</html>
