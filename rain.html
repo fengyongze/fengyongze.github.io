@@ -43,14 +43,18 @@
         h1 {
             font: bold 30px Consolas, Monaco, monospace;
             border-right: 3px solid;
-            width:240px;
+            width:500px;
+            white-space: nowrap;
             overflow: hidden;
-            animation: typing 4s steps(8, end), blink-caret .5s step-end infinite alternate;
-            -webkit-animation: typing 4s steps(8, end), blink-caret .5s step-end infinite alternate;
-            -moz-animation: typing 4s steps(8, end), blink-caret .5s step-end infinite alternate;
-            -o-animation: typing 4s steps(8, end), blink-caret .5s step-end infinite alternate;
+            animation: typing 12s steps(16, end), blink-caret .5s step-end infinite alternate;
+            -webkit-animation: typing 12s steps(16, end), blink-caret .5s step-end infinite alternate;
+            -moz-animation: typing 12s steps(16, end), blink-caret .5s step-end infinite alternate;
+            -o-animation: typing 12s steps(16, end), blink-caret .5s step-end infinite alternate;
         }
-        
+        #box p{
+            font:  20px Consolas,Monaco,monospace;
+            text-align: left;
+        }
         #box span {
             display: inline-block;
             width: 100px;
@@ -67,17 +71,17 @@
         }
         
         #img1 {
-            background-image: url(images/1.jpg);
+            background-image: url(images/1.png);
         }
         
         #img2 {
-            background-image: url(images/2.jpg);
+            background-image: url(images/2.png);
             margin-left: 50px;
             margin-right: 50px;
         }
         
         #img3 {
-            background-image: url(images/3.jpg);
+            background-image: url(images/3.png);
         }
         
         .hidden {
@@ -180,7 +184,6 @@
                 opacity: 0;
             }
             100% {
-                transform: rotate(360deg);
                 opacity: 1;
             }
         }
@@ -195,7 +198,6 @@
                 opacity: 0;
             }
             100% {
-                transform: rotate(360deg);
                 opacity: 1;
             }
         }
@@ -210,7 +212,6 @@
                 opacity: 0;
             }
             100% {
-                transform: rotate(360deg);
                 opacity: 1;
             }
         }
@@ -224,7 +225,6 @@
                 height: 0;
             }
             100% {
-                transform: rotate(360deg);
                 opacity: 1;
             }
         }
@@ -275,10 +275,8 @@
 <body class="bg" id="bg">
     <canvas id="rain">你的浏览器不支持，请更换浏览器</canvas>
     <div id="box">
-        <h1 class="hidden" id="main">冯永泽是你们爷爷</h1>
-        <span class="hidden" id="img1"></span>
-        <span class="hidden" id="img2"></span>
-        <span class="hidden" id="img3"></span>
+        <h1 class="hidden" id="main">您好，我叫冯永泽，面试前端开发。</h1>
+        <p class="hidden" id="text">&nbsp&nbsp自学前端半年，熟练掌握HTML,CSS,javascript,熟练掌握jQuery,requirejs,bootstrap。这个下雨的demo是我用canvas开发的，而且具有自适应的功能，用了javascript面向对象编程。开发过canvas游戏，移动端html页面，PC端页面，熟练掌握浏览器兼容问题，熟练掌握响应式页面开发。</p>
     </div>
     <video loop id="video">
         <source src="http://ysc.yisell.com/yisell/ycys2015718158529188/sound/yisell_sound_201408081318222230_66366.mp3">
@@ -288,6 +286,7 @@
         var bg = document.getElementById("bg");
         var box = document.getElementById("box");
         var main = document.getElementById("main");
+        var text = document.getElementById("text");
         var video = document.getElementById("video");
         var img1 = document.getElementById("img1");
         var img2 = document.getElementById("img2");
@@ -335,6 +334,7 @@
         }, false);
         main.addEventListener(transitionEventEnd, function() {
             video.pause();
+            text.removeAttribute("class");
             img1.removeAttribute("class");
             img2.removeAttribute("class");
             img3.removeAttribute("class");
