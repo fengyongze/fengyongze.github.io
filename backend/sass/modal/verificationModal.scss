@@ -1,0 +1,20 @@
+#verificationModal .modal-dialog {
+    margin-top: 25%;
+
+    .modal-body {
+        div {
+            text-align: center;
+        }
+
+        input {
+            margin-top: 27px;
+        }
+
+        .btn {
+            margin: 28px 10px 0 10px;
+            padding: 2px 15px 2px 15px;
+            color: $whiteColor;
+            border-radius: 0;
+        }
+    }
+}

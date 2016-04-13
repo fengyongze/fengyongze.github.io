@@ -1,0 +1,117 @@
+//动态改变CSS的长度和宽度写在JS
+.tableMain {
+    height: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+//出现纵向滚动条，可以控制vertical的纵向滚动
+.tableBody {
+    position: relative;
+    overflow: auto;
+    height: 91%;
+    padding-top: 27px;
+}
+
+//出现横向滚动条，取消纵向滚动条
+//表格的主体
+.nbTableBox {
+    overflow: auto;
+    overflow-y: hidden;
+    margin-left: 40px;
+}
+
+.nbTable {
+    display: table;
+    -webkit-transform-origin: $tableTransform-origin;
+
+    div {
+        display: table-row;
+
+        span {
+            font-size: 12px;
+            display: table-cell;
+            min-width: $tableWidth;
+            height: $tableHeight;
+            cursor: pointer;
+            text-align: center;
+            vertical-align: middle;
+            color: $whiteColor;
+            border-width: 1px 1px 0 0;
+            border-style: solid;
+            border-color: $whiteColor;
+            background-color: #f0eff5;
+        }
+    }
+}
+
+//几号场的横轴
+.groundNumberDiv {
+    position: relative;
+    top: 20px;
+    overflow: hidden;
+    height: 20px;
+    padding-left: 40px;
+}
+
+.groundNumber {
+    position: absolute;
+    z-index: 3;
+    display: table-row;
+    -webkit-transform-origin: $tableTransform-origin;
+
+    span {
+        font-size: 14px;
+        display: table-cell;
+        min-width: $tableWidth;
+        text-align: center;
+        background-color: $whiteColor;
+    }
+
+    .click {
+        color: #87b880;
+    }
+}
+
+//时间/场号
+.thead {
+    font-size: 16px;
+    position: absolute;
+    z-index: 4;
+    top: 190px;
+    left: 11%;
+    -webkit-transform-origin: top;
+    color: $secondayColor;
+    background-color: transparent;
+
+    .ground {
+        position: relative;
+        top: 5px;
+        margin-left: $tableMargin-left;
+    }
+
+    .slash {
+        width: 70px;
+        height: 1px;
+        -webkit-transform: $tableRotate;
+        background-color: $secondayColor;
+    }
+}
+
+//8:00的时间轴
+.vertical {
+    position: absolute;
+    top: 18px;
+    -webkit-transform-origin: $tableTransform-origin;
+    text-align: center;
+
+    div {
+        display: table-row;
+        min-width: $tableWidth;
+        height: $tableHeight;
+    }
+
+    .click {
+        color: #87b880;
+    }
+}

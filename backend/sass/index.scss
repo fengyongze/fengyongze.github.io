@@ -1,0 +1,67 @@
+/*
+*CONTENTS
+*
+*SETTINGS
+*variable...................................变量集中存储文件
+*
+*TOOLS
+*
+*COMPONENTS
+*
+*BUSINESS
+*
+*BASE
+*headerLeft...................................显示订单和金额的组件
+*headerLogo...................................解释图案的组件
+*headerRange..................................头部滑块的组件
+*headerRight..................................头部的5个按钮的组件
+*tap..........................................头部标签的组件
+*table........................................主体表格组件
+*verificationModal............................验证模态框
+*lockListModal................................长锁清单模态框
+*/
+@import "_variable";
+
+@import "header/headerLeft";
+
+@import "header/headerLogo";
+
+@import "header/headerRange";
+
+@import "header/headerRight";
+
+@import "tap/tap";
+
+@import "table/table";
+
+@import "modal/verificationModal";
+
+@import "modal/lockListModal";
+
+@import "modal/headerLockAndUnlockModal";
+
+@import "modal/modal";
+
+@import "img/icon";
+
+* {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}
+
+//头部的DIV
+html, body {
+    height: 100%;
+}
+
+.header {
+    background-color: #f2f2f2;
+    padding-left: $headerMargin-left;
+}
+
+//主体的DIV
+.bigBox {
+    height: 68%;
+    margin-top: 40px;
+    margin-left: 13%;
+    overflow-y: hidden;
+}

@@ -1,0 +1,566 @@
+@charset "UTF-8";
+/*
+*CONTENTS
+*
+*SETTINGS
+*variable...................................变量集中存储文件
+*
+*TOOLS
+*
+*COMPONENTS
+*
+*BUSINESS
+*
+*BASE
+*headerLeft...................................显示订单和金额的组件
+*headerLogo...................................解释图案的组件
+*headerRange..................................头部滑块的组件
+*headerRight..................................头部的5个按钮的组件
+*tap..........................................头部标签的组件
+*table........................................主体表格组件
+*verificationModal............................验证模态框
+*lockListModal................................长锁清单模态框
+*/
+/* line 1, D:/untitled1/backend/sass/header/headerLeft.scss */
+.headerLeft {
+  display: inline-block;
+  margin: 15px 4% 20px 0; }
+  /* line 5, D:/untitled1/backend/sass/header/headerLeft.scss */
+  .headerLeft > div {
+    display: inline-block; }
+    /* line 8, D:/untitled1/backend/sass/header/headerLeft.scss */
+    .headerLeft > div > div {
+      font-size: 13px;
+      margin-top: 5px; }
+  /* line 14, D:/untitled1/backend/sass/header/headerLeft.scss */
+  .headerLeft .left {
+    text-align: right;
+    color: #828282; }
+  /* line 19, D:/untitled1/backend/sass/header/headerLeft.scss */
+  .headerLeft .right {
+    text-align: left;
+    color: #50879c; }
+
+/* line 1, D:/untitled1/backend/sass/header/headerLogo.scss */
+.headerLogo {
+  display: inline-block; }
+  /* line 4, D:/untitled1/backend/sass/header/headerLogo.scss */
+  .headerLogo > div {
+    display: inline-block; }
+  /* line 8, D:/untitled1/backend/sass/header/headerLogo.scss */
+  .headerLogo .left {
+    font-size: 13px;
+    text-align: right;
+    color: #828282; }
+    /* line 13, D:/untitled1/backend/sass/header/headerLogo.scss */
+    .headerLogo .left div {
+      margin-top: 5px; }
+  /* line 19, D:/untitled1/backend/sass/header/headerLogo.scss */
+  .headerLogo .right div {
+    width: 30px;
+    height: 12px;
+    margin-top: 10px; }
+
+/* line 1, D:/untitled1/backend/sass/header/headerRange.scss */
+.headerRange {
+  position: relative;
+  bottom: 45px;
+  display: inline-block;
+  margin-left: 16px; }
+  /* line 7, D:/untitled1/backend/sass/header/headerRange.scss */
+  .headerRange span {
+    display: inline-block; }
+  /* line 11, D:/untitled1/backend/sass/header/headerRange.scss */
+  .headerRange .rangeText {
+    font-size: 13px;
+    position: relative;
+    top: 6px;
+    margin: 0 5px; }
+  /* line 18, D:/untitled1/backend/sass/header/headerRange.scss */
+  .headerRange input[type=range] {
+    display: inline-block;
+    width: 100%;
+    -webkit-appearance: none; }
+    /* line 23, D:/untitled1/backend/sass/header/headerRange.scss */
+    .headerRange input[type=range]:focus {
+      outline: none; }
+    /* line 27, D:/untitled1/backend/sass/header/headerRange.scss */
+    .headerRange input[type=range]::-webkit-slider-thumb {
+      width: 4px;
+      height: 17px;
+      margin-top: -7px;
+      cursor: pointer;
+      background: #88cddc;
+      -webkit-appearance: none; }
+    /* line 36, D:/untitled1/backend/sass/header/headerRange.scss */
+    .headerRange input[type=range]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 3px;
+      cursor: pointer;
+      background: #88cddc; }
+
+/* line 1, D:/untitled1/backend/sass/header/headerRight.scss */
+.headerRight {
+  display: inline-block;
+  margin-left: 25px; }
+  /* line 5, D:/untitled1/backend/sass/header/headerRight.scss */
+  .headerRight div {
+    display: inline-block;
+    margin: 0 10px 20px 10px; }
+    /* line 9, D:/untitled1/backend/sass/header/headerRight.scss */
+    .headerRight div span {
+      font-size: 13px;
+      position: relative;
+      display: table-cell;
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      text-align: center;
+      vertical-align: middle;
+      color: #fff;
+      border-radius: 60px;
+      background-color: #88cddc; }
+    /* line 23, D:/untitled1/backend/sass/header/headerRight.scss */
+    .headerRight div .headerRightClick {
+      color: #88cddc;
+      border: 1.5px solid #88cddc;
+      background-color: #fff; }
+  /* line 30, D:/untitled1/backend/sass/header/headerRight.scss */
+  .headerRight .hidden {
+    display: none; }
+  /* line 38, D:/untitled1/backend/sass/header/headerRight.scss */
+  .headerRight .pre1,
+  .headerRight .pre2,
+  .headerRight .pre3,
+  .headerRight .pre4 {
+    position: absolute;
+    transform: rotate(-45deg);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent; }
+  /* line 46, D:/untitled1/backend/sass/header/headerRight.scss */
+  .headerRight .pre1 {
+    top: 31px;
+    left: 0; }
+  /* line 51, D:/untitled1/backend/sass/header/headerRight.scss */
+  .headerRight .pre1Color {
+    border-right-color: #fff; }
+  /* line 55, D:/untitled1/backend/sass/header/headerRight.scss */
+  .headerRight .pre1Change {
+    border-right-color: #88cddc; }
+  /* line 59, D:/untitled1/backend/sass/header/headerRight.scss */
+  .headerRight .pre2 {
+    top: 28px;
+    left: 3px; }
+  /* line 64, D:/untitled1/backend/sass/header/headerRight.scss */
+  .headerRight .pre2Color {
+    border-right-color: #88cddc; }
+  /* line 68, D:/untitled1/backend/sass/header/headerRight.scss */
+  .headerRight .pre2Change {
+    border-right-color: #fff; }
+  /* line 72, D:/untitled1/backend/sass/header/headerRight.scss */
+  .headerRight .pre3 {
+    top: 9px;
+    left: 22px;
+    border-left-color: #fff; }
+  /* line 78, D:/untitled1/backend/sass/header/headerRight.scss */
+  .headerRight .pre3Color {
+    border-left-color: #fff; }
+  /* line 82, D:/untitled1/backend/sass/header/headerRight.scss */
+  .headerRight .pre3Change {
+    border-left-color: #88cddc; }
+  /* line 86, D:/untitled1/backend/sass/header/headerRight.scss */
+  .headerRight .pre4 {
+    top: 12px;
+    left: 19px; }
+  /* line 91, D:/untitled1/backend/sass/header/headerRight.scss */
+  .headerRight .pre4Color {
+    border-left-color: #88cddc; }
+  /* line 95, D:/untitled1/backend/sass/header/headerRight.scss */
+  .headerRight .pre4Change {
+    border-left-color: #fff; }
+
+/* line 1, D:/untitled1/backend/sass/tap/tap.scss */
+.tap {
+  position: absolute;
+  width: 75%;
+  margin-left: 15.5%; }
+  /* line 6, D:/untitled1/backend/sass/tap/tap.scss */
+  .tap span {
+    font-size: 20px;
+    line-height: 40px;
+    float: left;
+    width: 110px;
+    height: 40px;
+    margin: 0 1px 0 1px;
+    cursor: pointer;
+    transition: 1s;
+    text-align: center;
+    color: #9b9b9b;
+    border-bottom: 2px solid #9b9b9b;
+    background-color: #f2f2f2; }
+  /* line 21, D:/untitled1/backend/sass/tap/tap.scss */
+  .tap .tapClick {
+    font-size: 22px;
+    line-height: 50px;
+    height: 50px;
+    color: #50879c;
+    border-bottom: solid #50879c; }
+  /* line 29, D:/untitled1/backend/sass/tap/tap.scss */
+  .tap .clear {
+    clear: both; }
+
+/* line 2, D:/untitled1/backend/sass/table/table.scss */
+.tableMain {
+  height: 100%;
+  margin-top: 10px;
+  margin-left: 10px; }
+
+/* line 9, D:/untitled1/backend/sass/table/table.scss */
+.tableBody {
+  position: relative;
+  overflow: auto;
+  height: 91%;
+  padding-top: 27px; }
+
+/* line 18, D:/untitled1/backend/sass/table/table.scss */
+.nbTableBox {
+  overflow: auto;
+  overflow-y: hidden;
+  margin-left: 40px; }
+
+/* line 24, D:/untitled1/backend/sass/table/table.scss */
+.nbTable {
+  display: table;
+  -webkit-transform-origin: top left; }
+  /* line 28, D:/untitled1/backend/sass/table/table.scss */
+  .nbTable div {
+    display: table-row; }
+    /* line 31, D:/untitled1/backend/sass/table/table.scss */
+    .nbTable div span {
+      font-size: 12px;
+      display: table-cell;
+      min-width: 60px;
+      height: 25px;
+      cursor: pointer;
+      text-align: center;
+      vertical-align: middle;
+      color: #fff;
+      border-width: 1px 1px 0 0;
+      border-style: solid;
+      border-color: #fff;
+      background-color: #f0eff5; }
+
+/* line 49, D:/untitled1/backend/sass/table/table.scss */
+.groundNumberDiv {
+  position: relative;
+  top: 20px;
+  overflow: hidden;
+  height: 20px;
+  padding-left: 40px; }
+
+/* line 57, D:/untitled1/backend/sass/table/table.scss */
+.groundNumber {
+  position: absolute;
+  z-index: 3;
+  display: table-row;
+  -webkit-transform-origin: top left; }
+  /* line 63, D:/untitled1/backend/sass/table/table.scss */
+  .groundNumber span {
+    font-size: 14px;
+    display: table-cell;
+    min-width: 60px;
+    text-align: center;
+    background-color: #fff; }
+  /* line 71, D:/untitled1/backend/sass/table/table.scss */
+  .groundNumber .click {
+    color: #87b880; }
+
+/* line 77, D:/untitled1/backend/sass/table/table.scss */
+.thead {
+  font-size: 16px;
+  position: absolute;
+  z-index: 4;
+  top: 190px;
+  left: 11%;
+  -webkit-transform-origin: top;
+  color: #50879c;
+  background-color: transparent; }
+  /* line 87, D:/untitled1/backend/sass/table/table.scss */
+  .thead .ground {
+    position: relative;
+    top: 5px;
+    margin-left: 40px; }
+  /* line 93, D:/untitled1/backend/sass/table/table.scss */
+  .thead .slash {
+    width: 70px;
+    height: 1px;
+    -webkit-transform: rotate(-150deg);
+    background-color: #50879c; }
+
+/* line 102, D:/untitled1/backend/sass/table/table.scss */
+.vertical {
+  position: absolute;
+  top: 18px;
+  -webkit-transform-origin: top left;
+  text-align: center; }
+  /* line 108, D:/untitled1/backend/sass/table/table.scss */
+  .vertical div {
+    display: table-row;
+    min-width: 60px;
+    height: 25px; }
+  /* line 114, D:/untitled1/backend/sass/table/table.scss */
+  .vertical .click {
+    color: #87b880; }
+
+/* line 1, D:/untitled1/backend/sass/modal/verificationModal.scss */
+#verificationModal .modal-dialog {
+  margin-top: 25%; }
+  /* line 5, D:/untitled1/backend/sass/modal/verificationModal.scss */
+  #verificationModal .modal-dialog .modal-body div {
+    text-align: center; }
+  /* line 9, D:/untitled1/backend/sass/modal/verificationModal.scss */
+  #verificationModal .modal-dialog .modal-body input {
+    margin-top: 27px; }
+  /* line 13, D:/untitled1/backend/sass/modal/verificationModal.scss */
+  #verificationModal .modal-dialog .modal-body .btn {
+    margin: 28px 10px 0 10px;
+    padding: 2px 15px 2px 15px;
+    color: #fff;
+    border-radius: 0; }
+
+/* line 1, D:/untitled1/backend/sass/modal/lockListModal.scss */
+#lockListModal .modal-header {
+  font-size: 20px;
+  text-align: center;
+  border: 0; }
+
+/* line 7, D:/untitled1/backend/sass/modal/lockListModal.scss */
+#lockListModal .modal-body {
+  overflow: auto;
+  height: 60%; }
+  /* line 11, D:/untitled1/backend/sass/modal/lockListModal.scss */
+  #lockListModal .modal-body .groundListBox {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center; }
+  /* line 17, D:/untitled1/backend/sass/modal/lockListModal.scss */
+  #lockListModal .modal-body .date {
+    font-size: 30px; }
+  /* line 21, D:/untitled1/backend/sass/modal/lockListModal.scss */
+  #lockListModal .modal-body .triangle {
+    position: relative;
+    left: 10px;
+    width: 0;
+    height: 0;
+    border-width: 7.5px 8px 7.5px 0;
+    border-style: solid;
+    border-color: transparent #808080 transparent transparent; }
+  /* line 31, D:/untitled1/backend/sass/modal/lockListModal.scss */
+  #lockListModal .modal-body .groundList {
+    width: 230px;
+    margin-left: 10px;
+    padding-left: 20px;
+    border-left: 1px solid #808080; }
+    /* line 37, D:/untitled1/backend/sass/modal/lockListModal.scss */
+    #lockListModal .modal-body .groundList span {
+      font-size: 16px;
+      display: inline-block;
+      padding: 5px 2px 5px 2px; }
+  /* line 44, D:/untitled1/backend/sass/modal/lockListModal.scss */
+  #lockListModal .modal-body .userList {
+    width: 210px; }
+    /* line 47, D:/untitled1/backend/sass/modal/lockListModal.scss */
+    #lockListModal .modal-body .userList span {
+      font-size: 16px;
+      display: block;
+      margin: 12px 2px 13px 14px; }
+      /* line 52, D:/untitled1/backend/sass/modal/lockListModal.scss */
+      #lockListModal .modal-body .userList span input {
+        width: 140px;
+        height: 22px;
+        color: #50879c; }
+  /* line 60, D:/untitled1/backend/sass/modal/lockListModal.scss */
+  #lockListModal .modal-body .closeIcon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(/img/close-icon.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; }
+
+/* line 70, D:/untitled1/backend/sass/modal/lockListModal.scss */
+#lockListModal .modal-footer {
+  text-align: center;
+  border: 0; }
+  /* line 74, D:/untitled1/backend/sass/modal/lockListModal.scss */
+  #lockListModal .modal-footer div {
+    margin-bottom: 23px;
+    color: #50879c; }
+  /* line 79, D:/untitled1/backend/sass/modal/lockListModal.scss */
+  #lockListModal .modal-footer .btn {
+    width: 80px;
+    height: 30px;
+    margin: 0 30px 0 30px;
+    color: #fff;
+    border-radius: 0; }
+
+/* line 2, D:/untitled1/backend/sass/modal/headerLockAndUnlockModal.scss */
+.headerLockAndUnlockModal .modal-body {
+  text-align: center; }
+  /* line 5, D:/untitled1/backend/sass/modal/headerLockAndUnlockModal.scss */
+  .headerLockAndUnlockModal .modal-body .groundListBox {
+    display: inline-flex;
+    margin-top: 20px;
+    align-items: center; }
+    /* line 10, D:/untitled1/backend/sass/modal/headerLockAndUnlockModal.scss */
+    .headerLockAndUnlockModal .modal-body .groundListBox .groundList {
+      margin-top: 5px; }
+      /* line 13, D:/untitled1/backend/sass/modal/headerLockAndUnlockModal.scss */
+      .headerLockAndUnlockModal .modal-body .groundListBox .groundList span {
+        font-size: 18px;
+        display: inline-block;
+        padding: 5px 2px 5px 2px; }
+    /* line 21, D:/untitled1/backend/sass/modal/headerLockAndUnlockModal.scss */
+    .headerLockAndUnlockModal .modal-body .groundListBox .userList span {
+      font-size: 16px;
+      display: block;
+      margin: 12px 2px 13px 14px; }
+      /* line 26, D:/untitled1/backend/sass/modal/headerLockAndUnlockModal.scss */
+      .headerLockAndUnlockModal .modal-body .groundListBox .userList span input {
+        width: 140px;
+        height: 22px;
+        color: #50879c; }
+  /* line 35, D:/untitled1/backend/sass/modal/headerLockAndUnlockModal.scss */
+  .headerLockAndUnlockModal .modal-body .btn {
+    width: 80px;
+    height: 30px;
+    margin: 20px 10px 0 10px;
+    color: #fff;
+    border-radius: 0; }
+
+/* line 46, D:/untitled1/backend/sass/modal/headerLockAndUnlockModal.scss */
+#headerLockModal .checkbox {
+  font-size: 18px;
+  color: #50879c; }
+  /* line 50, D:/untitled1/backend/sass/modal/headerLockAndUnlockModal.scss */
+  #headerLockModal .checkbox input {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    margin-left: -30px;
+    border: 1px solid #50879c;
+    background-color: #fff;
+    -webkit-appearance: none; }
+  /* line 61, D:/untitled1/backend/sass/modal/headerLockAndUnlockModal.scss */
+  #headerLockModal .checkbox input:checked {
+    -webkit-appearance: checkbox; }
+
+/* line 68, D:/untitled1/backend/sass/modal/headerLockAndUnlockModal.scss */
+#headerUnlockModal .unlockModalText {
+  font-size: 18px;
+  margin-top: 30px;
+  color: #50879c; }
+
+/* line 1, D:/untitled1/backend/sass/modal/modal.scss */
+.cancel {
+  background-color: #a0a0a0; }
+
+/* line 5, D:/untitled1/backend/sass/modal/modal.scss */
+.tested {
+  background-color: #87b880; }
+
+/* line 1, D:/untitled1/backend/sass/img/icon.scss */
+.appIcon {
+  background-image: url(/img/icon-3.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+/* line 7, D:/untitled1/backend/sass/img/icon.scss */
+.lockedIcon {
+  background-image: url(/img/icon-2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+/* line 13, D:/untitled1/backend/sass/img/icon.scss */
+.canLockIcon {
+  background-image: url(/img/icon-5.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+/* line 19, D:/untitled1/backend/sass/img/icon.scss */
+.canUnlockIcon {
+  background-image: url(/img/icon-4.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+/* line 25, D:/untitled1/backend/sass/img/icon.scss */
+.unPaidIcon {
+  background-image: url(/img/icon-1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+/* line 31, D:/untitled1/backend/sass/img/icon.scss */
+.appImg {
+  background-image: url(/img/icon-3.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+/* line 37, D:/untitled1/backend/sass/img/icon.scss */
+.appImg:after {
+  content: 'APP订场'; }
+
+/* line 41, D:/untitled1/backend/sass/img/icon.scss */
+.lockedImg {
+  background-image: url(/img/icon-2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+/* line 47, D:/untitled1/backend/sass/img/icon.scss */
+.lockedImg:after {
+  content: '锁定'; }
+
+/* line 51, D:/untitled1/backend/sass/img/icon.scss */
+.canLockImg {
+  background-image: url(/img/icon-5.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+/* line 57, D:/untitled1/backend/sass/img/icon.scss */
+.canUnlockImg {
+  background-image: url(/img/icon-4.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+/* line 63, D:/untitled1/backend/sass/img/icon.scss */
+.unPaidImg {
+  background-image: url(/img/icon-1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+/* line 69, D:/untitled1/backend/sass/img/icon.scss */
+.unPaidImg:after {
+  content: '待支付'; }
+
+/* line 47, D:/untitled1/backend/sass/index.scss */
+* {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif; }
+
+/* line 52, D:/untitled1/backend/sass/index.scss */
+html, body {
+  height: 100%; }
+
+/* line 56, D:/untitled1/backend/sass/index.scss */
+.header {
+  background-color: #f2f2f2;
+  padding-left: 15.5%; }
+
+/* line 62, D:/untitled1/backend/sass/index.scss */
+.bigBox {
+  height: 68%;
+  margin-top: 40px;
+  margin-left: 13%;
+  overflow-y: hidden; }
+
+/*# sourceMappingURL=index.css.map */

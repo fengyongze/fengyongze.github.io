@@ -1,0 +1,23 @@
+.headerLeft {
+    display: inline-block;
+    margin: 15px 4% 20px 0;
+
+    > div {
+        display: inline-block;
+
+        > div {
+            font-size: $headerFontSize;
+            margin-top: 5px;
+        }
+    }
+
+    .left {
+        text-align: right;
+        color: #828282;
+    }
+
+    .right {
+        text-align: left;
+        color: $secondayColor;
+    }
+}
