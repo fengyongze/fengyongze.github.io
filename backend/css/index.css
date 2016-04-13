@@ -559,42 +559,42 @@
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/untitled1\/backend\/sass\/img\/icon\.scss}line{font-family:\000031}}
 .appIcon {
-  background-image: url(/img/icon-3.png);
+  background-image: url(backend/img/icon-3.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/untitled1\/backend\/sass\/img\/icon\.scss}line{font-family:\000037}}
 .lockedIcon {
-  background-image: url(/img/icon-2.png);
+  background-image: url(backend/img/icon-2.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/untitled1\/backend\/sass\/img\/icon\.scss}line{font-family:\0000313}}
 .canLockIcon {
-  background-image: url(/img/icon-5.png);
+  background-image: url(backend/img/icon-5.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/untitled1\/backend\/sass\/img\/icon\.scss}line{font-family:\0000319}}
 .canUnlockIcon {
-  background-image: url(/img/icon-4.png);
+  background-image: url(backend/img/icon-4.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/untitled1\/backend\/sass\/img\/icon\.scss}line{font-family:\0000325}}
 .unPaidIcon {
-  background-image: url(/img/icon-1.png);
+  background-image: url(backend/img/icon-1.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/untitled1\/backend\/sass\/img\/icon\.scss}line{font-family:\0000331}}
 .appImg {
-  background-image: url(/img/icon-3.png);
+  background-image: url(backend/img/icon-3.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -606,7 +606,7 @@
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/untitled1\/backend\/sass\/img\/icon\.scss}line{font-family:\0000341}}
 .lockedImg {
-  background-image: url(/img/icon-2.png);
+  background-image: url(backend/img/icon-2.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -618,21 +618,21 @@
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/untitled1\/backend\/sass\/img\/icon\.scss}line{font-family:\0000351}}
 .canLockImg {
-  background-image: url(/img/icon-5.png);
+  background-image: url(backend/img/icon-5.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/untitled1\/backend\/sass\/img\/icon\.scss}line{font-family:\0000357}}
 .canUnlockImg {
-  background-image: url(/img/icon-4.png);
+  background-image: url(backend/img/icon-4.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/untitled1\/backend\/sass\/img\/icon\.scss}line{font-family:\0000363}}
 .unPaidImg {
-  background-image: url(/img/icon-1.png);
+  background-image: url(backend/img/icon-1.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
