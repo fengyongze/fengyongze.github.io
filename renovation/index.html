@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="container">
+        <div class="section active" id="section0">
+            <div class="title">
+                <div class="main-title"><strong>新居装修从这里开始</strong></div>
+                <div class="subtitle"><span>100000+装修案例图、设计师、量房、出方案、估价，这一切都是免费的</span></div>
+            </div>
+            <div class="page1_main">
+                <div class="location">佛山</div>
+                <div class="house">
+                    <div>
+                        <span class="up hidden"></span>
+                        <span class="num room">1</span>
+                        <span class="down hidden"></span>
+                    </div>
+                    室
+                    <div>
+                        <span class="up hidden"></span>
+                        <span class="num hall">1</span>
+                        <span class="down hidden"></span>
+                    </div>
+                    厅
+                    <div>
+                        <span class="up hidden"></span>
+                        <span class="num kitchen">1</span>
+                        <span class="down hidden"></span>
+                    </div>
+                    厨
+                    <div>
+                        <span class="up hidden"></span>
+                        <span class="num toilet">1</span>
+                        <span class="down hidden"></span>
+                    </div>
+                    卫
+                </div>
+                <div class="area">
+                    <input class="square" type="text" onkeyup="if(isNaN(value))execCommand('undo')" placeholder="建筑面积">m²</div>
+                <div class="go">GO</div>
+            </div>
+            <div class="city hidden">
+                <ul>
+                    <li>
+                        <span>北京</span>
+                        <span>天津</span>
+                        <span>沈阳</span>
+                        <span>大连</span>
+                        <span>石家庄</span>
+                        <span>廊坊</span>
+                        <span>哈尔滨</span>
+                        <span>长春</span>
+                    </li>
+                    <li>
+                        <span>上海</span>
+                        <span>南京</span>
+                        <span>杭州</span>
+                        <span>福州</span>
+                        <span>苏州</span>
+                        <span>常熟</span>
+                        <span>济南</span>
+                        <span>无锡</span>
+                        <span>青岛</span>
+                        <span>宁波</span>
+                        <span>温州</span>
+                    </li>
+                    <li>
+                        <span>广州</span>
+                        <span>深圳</span>
+                        <span>珠海</span>
+                        <span>厦门</span>
+                    </li>
+                    <li>
+                        <span>重庆</span>
+                        <span>西安</span>
+                        <span>武汉</span>
+                        <span>成都</span>
+                        <span>昆明</span>
+                        <span>合肥</span>
+                        <span>兰州</span>
+                        <span>太原</span>
+                        <span>贵阳</span>
+                        <span>郑州</span>
+                        <span>呼和浩特</span>
+                        <span>银川</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section" id="section1">
+            <div class="title">
+                <div class="main-title"><strong>您希望您的新家是哪种风格？</strong></div>
+                <div class="subtitle">
+                    <span>（您的新居建筑面积：
+                    <span class="square">88</span>平方、
+                    <span class="room">3</span>房
+                    <span class="hall">1</span>厅
+                    <span class="kitchen">1</span>厨
+                    <span class="toilet">1</span>卫）
+                    </span>
+                </div>
+            </div>
+            <div class="page2-main page">
+                <div><span class="circle" id="icon1"></span>简单</div>
+                <div><span class="circle" id="icon2"></span>华丽</div>
+                <div><span class="circle" id="icon3"></span>自然</div>
+                <div><span class="circle" id="icon4"></span>温馨</div>
+                <div><span class="circle" id="icon5"></span>清新</div>
+                <div><span class="circle" id="icon6"></span>浪漫</div>
+                <div><span class="circle" id="icon7"></span>前卫</div>
+            </div>
+            <div class="footer">
+                <div>返回</div>
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <div class="title">
+                <div class="main-title"><strong>您希望您希望您家的新家是哪种色调？</strong></div>
+                <div class="subtitle">
+                    <span>（您的新居建筑面积：
+                    <span class="square">88</span>平方、
+                    <span class="room">3</span>房
+                    <span class="hall">1</span>厅
+                    <span class="kitchen">1</span>厨
+                    <span class="toilet">1</span>卫，选择“
+                    <span class="style">简约</span>”风格）
+                    </span>
+                </div>
+            </div>
+            <div class="page3-main page">
+                <div><span class="circle" id="color1"></span>红色</div>
+                <div><span class="circle" id="color2"></span>黄色</div>
+                <div><span class="circle" id="color3"></span>绿色</div>
+                <div><span class="circle" id="color4"></span>天蓝</div>
+                <div><span class="circle" id="color5"></span>褐色</div>
+                <div><span class="circle" id="color6"></span>灰色</div>
+                <div><span class="circle" id="color7"></span>洁白</div>
+                <div><span class="circle" id="color8"></span>酷黑</div>
+            </div>
+            <div class="footer">
+                <div class="match">开始智能匹配</div>
+            </div>
+        </div>
+    </div>
+
+    <script data-main="js/main" src="js/require.js"></script>
+</body>
+
+</html>

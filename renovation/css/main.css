@@ -1,0 +1,252 @@
+@charset "UTF-8";
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\000031}}
+html, body {
+  background-color: #f2f2f2;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\000037}}
+div span li {
+  font-family: Arial,Tahoma,'Hiragino Sans GB W3','微软雅黑';
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\0000311}}
+#header {
+  height: 190px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\0000315}}
+#container {
+  width: 300%;
+  display: flex;
+  transition: all 1000ms ease;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\0000321}}
+.section {
+  width: 33.33%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\0000325}}
+.hidden {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\0000329}}
+.title {
+  text-align: center;
+  height: 125px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\0000333}}
+.title .main-title {
+  font-size: 22px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\0000337}}
+.title .subtitle {
+  margin-top: 18px;
+  font-size: 18px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\0000343}}
+.page1_main {
+  display: flex;
+  justify-content: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\0000347}}
+.page1_main > div {
+  font-size: 16px;
+  line-height: 50px;
+  height: 50px;
+  margin-left: 8px;
+  text-align: center;
+  background-color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\0000356}}
+.page1_main .location {
+  width: 110px;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\0000361}}
+.page1_main .house {
+  width: 217px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\0000364}}
+.page1_main .house div {
+  position: relative;
+  display: inline-block;
+  padding: 0 6px 0 4px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\0000369}}
+.page1_main .house div .up {
+  position: absolute;
+  top: 5px;
+  display: block;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+  border-width: 0 5px 8.7px 5px;
+  border-style: solid;
+  border-color: transparent transparent #f2f2f2 transparent;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\0000381}}
+.page1_main .house div .up:hover {
+  border-width: 0 6px 10.4px 6px;
+  border-color: transparent transparent #000 transparent;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\0000386}}
+.page1_main .house div .down {
+  position: absolute;
+  bottom: 5px;
+  display: block;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+  border-width: 8.7px 5px 0 5px;
+  border-style: solid;
+  border-color: #f2f2f2 transparent transparent transparent;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\0000398}}
+.page1_main .house div .down:hover {
+  border-width: 10.4px 6px 0 6px;
+  border-color: #000 transparent transparent transparent;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\00003105}}
+.page1_main .area {
+  width: 110px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\00003108}}
+.page1_main .area input {
+  width: 70px;
+  height: 50px;
+  border: 0;
+  outline: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\00003116}}
+.page1_main .go {
+  width: 160px;
+  background-color: #fcec30;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\00003123}}
+.city {
+  position: absolute;
+  left: 50%;
+  width: 621px;
+  margin-top: 8px;
+  margin-left: -306px;
+  background-color: #fff;
+  animation: fide 3s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\00003132}}
+.city ul {
+  margin: 0;
+  padding-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\00003136}}
+.city ul li {
+  padding: 8px 20px;
+  list-style: none;
+  border-bottom: 1px dashed #e1e1e1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\00003141}}
+.city ul li span {
+  font-size: 14px;
+  line-height: 24px;
+  padding-right: 4px;
+  color: #414141;
+  cursor: pointer;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\00003150}}
+.city ul li span:hover {
+  color: #11a5e2;
+  top: 1px;
+  left: 1px;
+  text-decoration: underline;
+}
+
+@keyframes fide {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\00003170}}
+.page {
+  text-align: center;
+  height: 150px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\00003174}}
+.page div {
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  margin-left: 18px;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\00003182}}
+.page div .circle {
+  display: block;
+  width: 65px;
+  height: 65px;
+  border-radius: 65px;
+  margin-bottom: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\00003190}}
+.page div #icon1, .page div #icon2, .page div #icon3, .page div #icon4, .page div #icon5, .page div #icon6, .page div #icon7 {
+  background-image: url(../img/1307A.jpg);
+  background-size: 100% 100%;
+  background-repeat: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\00003196}}
+.page div #color1 {
+  background-color: #ff0000;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\00003200}}
+.page div #color2 {
+  background-color: #fcd351;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\00003204}}
+.page div #color3 {
+  background-color: #acdf7c;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\00003208}}
+.page div #color4 {
+  background-color: #316cdb;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\00003212}}
+.page div #color5 {
+  background-color: #aa6b22;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\00003216}}
+.page div #color6 {
+  background-color: #a6a6a6;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\00003220}}
+.page div #color7 {
+  background-color: #ffffff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\00003224}}
+.page div #color8 {
+  background-color: #1c1c1c;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\00003230}}
+.footer {
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/scss\/main\.scss}line{font-family:\00003233}}
+.footer .match {
+  background-color: #fcec30;
+  width: 160px;
+  height: 50px;
+  border-radius: 3px;
+  margin: auto;
+  line-height: 50px;
+  font-size: 18px;
+}

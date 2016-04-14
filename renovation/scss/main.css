@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/* line 1, D:/renovation/scss/main.scss */
+body {
+  background-color: #f2f2f2; }
+
+/* line 5, D:/renovation/scss/main.scss */
+div span li {
+  font-family: Arial,Tahoma,'Hiragino Sans GB W3','微软雅黑'; }
+
+/* line 9, D:/renovation/scss/main.scss */
+.header {
+  height: 300px; }
+
+/* line 13, D:/renovation/scss/main.scss */
+.hidden {
+  display: none; }
+
+/* line 17, D:/renovation/scss/main.scss */
+.page1_main {
+  display: flex;
+  justify-content: center; }
+  /* line 21, D:/renovation/scss/main.scss */
+  .page1_main > div {
+    font-size: 16px;
+    line-height: 50px;
+    height: 50px;
+    margin-left: 8px;
+    text-align: center;
+    background-color: #fff; }
+  /* line 30, D:/renovation/scss/main.scss */
+  .page1_main .location {
+    width: 110px;
+    cursor: pointer; }
+  /* line 35, D:/renovation/scss/main.scss */
+  .page1_main .house {
+    width: 217px; }
+    /* line 38, D:/renovation/scss/main.scss */
+    .page1_main .house div {
+      position: relative;
+      display: inline-block;
+      padding: 0 6px 0 4px; }
+      /* line 43, D:/renovation/scss/main.scss */
+      .page1_main .house div .up {
+        position: absolute;
+        top: 5px;
+        display: block;
+        width: 0;
+        height: 0;
+        cursor: pointer;
+        border-width: 0 5px 8.7px 5px;
+        border-style: solid;
+        border-color: transparent transparent #f2f2f2 transparent; }
+      /* line 55, D:/renovation/scss/main.scss */
+      .page1_main .house div .up:hover {
+        border-width: 0 6px 10.4px 6px;
+        border-color: transparent transparent #000 transparent; }
+      /* line 60, D:/renovation/scss/main.scss */
+      .page1_main .house div .down {
+        position: absolute;
+        bottom: 5px;
+        display: block;
+        width: 0;
+        height: 0;
+        cursor: pointer;
+        border-width: 8.7px 5px 0 5px;
+        border-style: solid;
+        border-color: #f2f2f2 transparent transparent transparent; }
+      /* line 72, D:/renovation/scss/main.scss */
+      .page1_main .house div .down:hover {
+        border-width: 10.4px 6px 0 6px;
+        border-color: #000 transparent transparent transparent; }
+  /* line 79, D:/renovation/scss/main.scss */
+  .page1_main .area {
+    width: 110px; }
+    /* line 82, D:/renovation/scss/main.scss */
+    .page1_main .area input {
+      width: 70px;
+      height: 50px;
+      border: 0;
+      outline: none; }
+  /* line 90, D:/renovation/scss/main.scss */
+  .page1_main .go {
+    width: 160px;
+    background-color: #fcec30; }
+
+/* line 96, D:/renovation/scss/main.scss */
+.city {
+  position: absolute;
+  left: 50%;
+  width: 621px;
+  margin-top: 8px;
+  margin-left: -306px;
+  background-color: #fff;
+  animation: fide 3s; }
+  /* line 105, D:/renovation/scss/main.scss */
+  .city ul {
+    margin: 0;
+    padding-left: 0; }
+    /* line 109, D:/renovation/scss/main.scss */
+    .city ul li {
+      padding: 8px 20px;
+      list-style: none;
+      border-bottom: 1px dashed #e1e1e1; }
+      /* line 114, D:/renovation/scss/main.scss */
+      .city ul li span {
+        font-size: 14px;
+        line-height: 24px;
+        padding-right: 4px;
+        color: #414141;
+        cursor: pointer;
+        position: relative; }
+      /* line 123, D:/renovation/scss/main.scss */
+      .city ul li span:hover {
+        color: #11a5e2;
+        top: 1px;
+        left: 1px;
+        text-decoration: underline; }
+
+@keyframes fide {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/*# sourceMappingURL=main.css.map */
