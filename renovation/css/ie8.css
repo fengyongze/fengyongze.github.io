@@ -1,0 +1,5 @@
+.page .circle {
+    position: relative;
+    z-index: 3;
+    behavior: url(css/PIE.htc);
+}

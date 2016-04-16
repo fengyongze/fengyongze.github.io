@@ -11,7 +11,30 @@ define(function() {
 			$("#section2 .style").text($(this).text());
 		});
 	}
+
+	function Selection1Color() {
+		$("#section1 .page2-main div").on("click", function() {
+			$(this).toggleClass("selected");
+			$(this).siblings().removeClass("selected");
+		});
+
+	}
+
+	function Selection2Color() {
+		$("#section2 .page3-main div").on("click", function() {
+			$("#section2 .back").addClass("hidden");
+			$("#section2 .match").removeClass("hidden");
+			$(this).toggleClass("selected");
+			$(this).siblings().removeClass("selected");
+			if (!($(this).hasClass("selected"))) {
+				$("#section2 .back").removeClass("hidden");
+				$("#section2 .match").addClass("hidden");
+			}
+		});
+	}
 	return {
-		select: Select
+		select: Select,
+		selection1Color: Selection1Color,
+		selection2Color: Selection2Color
 	};
 });

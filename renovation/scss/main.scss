@@ -1,11 +1,12 @@
-html, body {
-    background-color: #f2f2f2;
-    width: 100%;
+html,
+body {
     overflow: hidden;
+    width: 100%;
+    background-color: #f2f2f2;
 }
 
 div span li {
-    font-family: Arial,Tahoma,'Hiragino Sans GB W3','微软雅黑';
+    font-family: Arial,Tahoma,'Hiragino Sans GB W3';
 }
 
 #header {
@@ -14,12 +15,22 @@ div span li {
 
 #container {
     width: 300%;
-    display: flex;
+    -ms-transition: all 1000ms ease;
     transition: all 1000ms ease;
 }
 
 .section {
-    width: 33.33%;
+    float: left;
+    width: 33%;
+}
+
+#section0 {
+    position: relative;
+    height: 350px;
+}
+
+.section:after {
+    clear: both;
 }
 
 .hidden {
@@ -27,26 +38,30 @@ div span li {
 }
 
 .title {
-    text-align: center;
     height: 125px;
+    margin: 0 auto;
+    text-align: center;
 
     .main-title {
-        font-size: 22px;
+        font-size: 26px;
+        text-align: center;
     }
 
     .subtitle {
+        font-size: 15px;
         margin-top: 18px;
-        font-size: 18px;
+        color: #4c4c4c;
     }
 }
 
 .page1_main {
-    display: flex;
-    justify-content: center;
+    position: relative;
+    text-align: center;
 
     > div {
         font-size: 16px;
         line-height: 50px;
+        display: inline-block;
         height: 50px;
         margin-left: 8px;
         text-align: center;
@@ -106,28 +121,34 @@ div span li {
         width: 110px;
 
         input {
-            width: 70px;
-            height: 50px;
+            width: 75px;
+            height: 49px;
+            padding-left: 5px;
             border: 0;
             outline: none;
+        }
+
+        .error {
+            outline-style: solid;
+            outline-color: red;
         }
     }
 
     .go {
         width: 160px;
-        background-color: #fcec30;
         cursor: pointer;
+        background-color: #fcec30;
     }
 }
 
 .city {
     position: absolute;
     left: 50%;
-    width: 621px;
+    width: 635px;
     margin-top: 8px;
-    margin-left: -306px;
-    background-color: #fff;
+    margin-left: -313px;
     animation: fide 3s;
+    background-color: #fff;
 
     ul {
         margin: 0;
@@ -141,17 +162,17 @@ div span li {
             span {
                 font-size: 14px;
                 line-height: 24px;
-                padding-right: 4px;
-                color: #414141;
-                cursor: pointer;
                 position: relative;
+                padding-right: 4px;
+                cursor: pointer;
+                color: #414141;
             }
 
             span:hover {
-                color: #11a5e2;
                 top: 1px;
                 left: 1px;
                 text-decoration: underline;
+                color: #11a5e2;
             }
         }
     }
@@ -167,61 +188,160 @@ div span li {
     }
 }
 
+@keyframes roll {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
 .page {
-    text-align: center;
     height: 150px;
+    text-align: center;
 
     div {
+        font-size: 14px;
         display: inline-block;
-        width: 65px;
-        height: 65px;
-        text-align: center;
+        width: 73px;
+        height: 73px;
+        border-radius: 73px;
         margin-left: 18px;
+        padding: 3px;
         cursor: pointer;
+        text-align: center;
 
         .circle {
             display: block;
             width: 65px;
             height: 65px;
-            border-radius: 65px;
             margin-bottom: 12px;
+            border-radius: 65px;
+            animation-fill-mode: backwards;
+            -webkit-animation-fill-mode: backwards;
         }
+    }
 
-        #icon1, #icon2, #icon3, #icon4, #icon5, #icon6, #icon7 {
-            background-image: url(../img/1307A.jpg);
-            background-size: 100% 100%;
+    div :hover {
+        transition: all 500ms ease;
+        transform: scale(1.2);
+    }
+
+    .selected {
+        border-width: 1px;
+        border-style: dashed;
+        border-color: #000;
+    }
+
+    #icon1, #icon2, #icon3, #icon4, #icon5, #icon6, #icon7 {
+        span {
+            background-image: url(../img/150.png);
             background-repeat: none;
+            background-size: 100% 100%;
         }
+    }
 
-        #color1 {
-            background-color: #ff0000;
+    .roll {
+        animation: roll .5s;
+    }
+
+    .icon1 {
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s;
+    }
+
+    .icon2 {
+        -webkit-animation-delay: .1s;
+        animation-delay: .1s;
+    }
+
+    .icon3 {
+        -webkit-animation-delay: .2s;
+        animation-delay: .2s;
+    }
+
+    .icon4 {
+        -webkit-animation-delay: .3s;
+        animation-delay: .3s;
+    }
+
+    .icon5 {
+        -webkit-animation-delay: .4s;
+        animation-delay: .4s;
+    }
+
+    .icon6 {
+        -webkit-animation-delay: .5s;
+        animation-delay: .5s;
+    }
+
+    .icon7 {
+        -webkit-animation-delay: .6s;
+        animation-delay: .6s;
+    }
+
+    #color1 {
+        span {
+            background-color: #f00;
+
+            @extend .icon1;
         }
+    }
 
-        #color2 {
+    #color2 {
+        span {
             background-color: #fcd351;
-        }
 
-        #color3 {
+            @extend .icon2;
+        }
+    }
+
+    #color3 {
+        span {
             background-color: #acdf7c;
-        }
 
-        #color4 {
+            @extend .icon3;
+        }
+    }
+
+    #color4 {
+        span {
             background-color: #316cdb;
-        }
 
-        #color5 {
+            @extend .icon4;
+        }
+    }
+
+    #color5 {
+        span {
             background-color: #aa6b22;
-        }
 
-        #color6 {
+            @extend .icon5;
+        }
+    }
+
+    #color6 {
+        span {
             background-color: #a6a6a6;
-        }
 
-        #color7 {
-            background-color: #ffffff;
+            @extend .icon6;
         }
+    }
 
-        #color8 {
+    #color7 {
+        span {
+            background-color: #fff;
+
+            @extend .icon7;
+        }
+    }
+
+    #color8 {
+        span {
+            -webkit-animation-delay: .7s;
+            animation-delay: .7s;
             background-color: #1c1c1c;
         }
     }
@@ -230,13 +350,35 @@ div span li {
 .footer {
     text-align: center;
 
-    .match {
-        background-color: #fcec30;
+    .match a {
+        font-size: 16px;
+        line-height: 50px;
+        display: block;
         width: 160px;
         height: 50px;
-        border-radius: 3px;
         margin: auto;
-        line-height: 50px;
-        font-size: 18px;
+        text-decoration: none;
+        color: #4c4c4c;
+        border-radius: 3px;
+        background-color: #fcec30;
     }
+
+    .match a:hover {
+        color: #000;
+        background: #ffea00;
+    }
+}
+
+.back {
+    line-height: 50px;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    padding-left: 25px;
+    text-align: center;
+}
+
+.back:hover {
+    padding-left: 2px;
+    transition: all 300ms;
 }

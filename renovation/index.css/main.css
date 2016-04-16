@@ -1,0 +1,386 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\000031}}
+html, body {
+  background-color: #f2f2f2;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\000037}}
+div span li {
+  font-family: Arial,Tahoma,'Hiragino Sans GB W3';
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\0000311}}
+#header {
+  height: 190px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\0000315}}
+#container {
+  width: 300%;
+  -webkit-transition:all 1000ms ease;
+  transition: all 1000ms ease;
+  -ms-transition: all 1000ms ease;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\0000321}}
+.section {
+  float: left;
+  width: 33%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\0000326}}
+#section0 {
+  position: relative;
+  height: 350px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\0000331}}
+.section:after {
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\0000335}}
+.hidden {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\0000339}}
+.title {
+  text-align: center;
+  height: 125px;
+  margin: 0 auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\0000344}}
+.title .main-title {
+  font-size: 26px;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\0000349}}
+.title .subtitle {
+  margin-top: 18px;
+  font-size: 15px;
+  color: #4c4c4c;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\0000356}}
+.page1_main {
+  text-align: center;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\0000360}}
+.page1_main > div {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 50px;
+  height: 50px;
+  margin-left: 8px;
+  text-align: center;
+  background-color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\0000370}}
+.page1_main .location {
+  width: 110px;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\0000375}}
+.page1_main .house {
+  width: 217px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\0000378}}
+.page1_main .house div {
+  position: relative;
+  display: inline-block;
+  padding: 0 6px 0 4px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\0000383}}
+.page1_main .house div .up {
+  position: absolute;
+  top: 5px;
+  display: block;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+  border-width: 0 5px 8.7px 5px;
+  border-style: solid;
+  border-color: transparent transparent #f2f2f2 transparent;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\0000395}}
+.page1_main .house div .up:hover {
+  border-width: 0 6px 10.4px 6px;
+  border-color: transparent transparent #000 transparent;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003100}}
+.page1_main .house div .down {
+  position: absolute;
+  bottom: 5px;
+  display: block;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+  border-width: 8.7px 5px 0 5px;
+  border-style: solid;
+  border-color: #f2f2f2 transparent transparent transparent;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003112}}
+.page1_main .house div .down:hover {
+  border-width: 10.4px 6px 0 6px;
+  border-color: #000 transparent transparent transparent;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003119}}
+.page1_main .area {
+  width: 110px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003122}}
+.page1_main .area input {
+  width: 86px;
+  height: 45px;
+  border: 0;
+  outline: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003129}}
+.page1_main .area .error {
+  outline-style: solid;
+  outline-color: red;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003135}}
+.page1_main .go {
+  width: 160px;
+  background-color: #fcec30;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003142}}
+.city {
+  position: absolute;
+  left: 50%;
+  width: 635px;
+  margin-top: 8px;
+  margin-left: -313px;
+  background-color: #fff;
+  -webkit-animation: fide 3s;
+          animation: fide 3s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003151}}
+.city ul {
+  margin: 0;
+  padding-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003155}}
+.city ul li {
+  padding: 8px 20px;
+  list-style: none;
+  border-bottom: 1px dashed #e1e1e1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003160}}
+.city ul li span {
+  font-size: 14px;
+  line-height: 24px;
+  padding-right: 4px;
+  color: #414141;
+  cursor: pointer;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003169}}
+.city ul li span:hover {
+  color: #11a5e2;
+  top: 1px;
+  left: 1px;
+  text-decoration: underline;
+}
+
+@-webkit-keyframes fide {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fide {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes roll {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes roll {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003199}}
+.page {
+  height: 150px;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003203}}
+.page div {
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 18px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003212}}
+.page div .circle {
+  display: block;
+  width: 65px;
+  height: 65px;
+  border-radius: 65px;
+  margin-bottom: 12px;
+  animation-fill-mode: backwards;
+  -webkit-animation-fill-mode: backwards;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003222}}
+.page div .selected {
+  border-style: dashed;
+  border-width: 2px;
+  border-color: #fff;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003231}}
+.page #icon1 span, .page #icon2 span, .page #icon3 span, .page #icon4 span, .page #icon5 span, .page #icon6 span, .page #icon7 span {
+  background-image: url(../img/150.png);
+  background-size: 100% 100%;
+  background-repeat: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003238}}
+.page .roll {
+  -webkit-animation: roll 0.5s;
+          animation: roll 0.5s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003242}}
+.page .icon1, .page #color1 span {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003247}}
+.page .icon2, .page #color2 span {
+  animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003252}}
+.page .icon3, .page #color3 span {
+  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003257}}
+.page .icon4, .page #color4 span {
+  animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003262}}
+.page .icon5, .page #color5 span {
+  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003267}}
+.page .icon6, .page #color6 span {
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003272}}
+.page .icon7, .page #color7 span {
+  animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003278}}
+.page #color1 span {
+  background-color: #ff0000;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003286}}
+.page #color2 span {
+  background-color: #fcd351;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003294}}
+.page #color3 span {
+  background-color: #acdf7c;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003302}}
+.page #color4 span {
+  background-color: #316cdb;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003310}}
+.page #color5 span {
+  background-color: #aa6b22;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003318}}
+.page #color6 span {
+  background-color: #a6a6a6;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003326}}
+.page #color7 span {
+  background-color: #ffffff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003334}}
+.page #color8 span {
+  animation-delay: 0.7s;
+  -webkit-animation-delay: 0.7s;
+  background-color: #1c1c1c;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003341}}
+.page .circle:hover {
+  -webkit-transition:all 500ms ease;
+  transition: all 500ms ease;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003347}}
+.footer {
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003350}}
+.footer .match a {
+  display: block;
+  text-decoration: none;
+  background-color: #fcec30;
+  width: 160px;
+  height: 50px;
+  border-radius: 3px;
+  margin: auto;
+  line-height: 50px;
+  font-size: 16px;
+  color: #4c4c4c;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003363}}
+.footer .match a:hover {
+  background: #ffea00;
+  color: #000;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003369}}
+.back {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 25px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/renovation\/modify\/renovation\%204\/scss\/main\.scss}line{font-family:\00003378}}
+.back:hover {
+  padding-left: 2px;
+}

@@ -4,16 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
+    <!--[if IE 8]>
+    <link rel="stylesheet" href="css/ie8.css">
+    <![endif]-->
 </head>
 
 <body>
     <div id="header"></div>
     <div id="container">
-        <div class="section active" id="section0">
+        <div class="section" id="section0">
             <div class="title">
                 <div class="main-title"><strong>新居装修从这里开始</strong></div>
                 <div class="subtitle"><span>100000+装修案例图、设计师、量房、出方案、估价，这一切都是免费的</span></div>
@@ -47,7 +50,7 @@
                     卫
                 </div>
                 <div class="area">
-                    <input class="square" type="text" onkeyup="if(isNaN(value))execCommand('undo')" placeholder="建筑面积">m²</div>
+                    <input class="square" type="text" onkeyup="if(isNaN(value))execCommand('undo')" placeholder="建筑面积" maxlength="3">m²</div>
                 <div class="go">GO</div>
             </div>
             <div class="city hidden">
@@ -112,21 +115,21 @@
                 </div>
             </div>
             <div class="page2-main page">
-                <div><span class="circle" id="icon1"></span>简单</div>
-                <div><span class="circle" id="icon2"></span>华丽</div>
-                <div><span class="circle" id="icon3"></span>自然</div>
-                <div><span class="circle" id="icon4"></span>温馨</div>
-                <div><span class="circle" id="icon5"></span>清新</div>
-                <div><span class="circle" id="icon6"></span>浪漫</div>
-                <div><span class="circle" id="icon7"></span>前卫</div>
+                <div id="icon1"><span class="circle icon1"></span>简单</div>
+                <div id="icon2"><span class="circle icon2"></span>华丽</div>
+                <div id="icon3"><span class="circle icon3"></span>自然</div>
+                <div id="icon4"><span class="circle icon4"></span>温馨</div>
+                <div id="icon5"><span class="circle icon5"></span>清新</div>
+                <div id="icon6"><span class="circle icon6"></span>浪漫</div>
+                <div id="icon7"><span class="circle icon7"></span>前卫</div>
             </div>
             <div class="footer">
-                <div>返回</div>
+                <div class="back"><img src="img/fh.png" width="57" height="26" /></div>
             </div>
         </div>
         <div class="section" id="section2">
             <div class="title">
-                <div class="main-title"><strong>您希望您希望您家的新家是哪种色调？</strong></div>
+                <div class="main-title"><strong>您希望您家的新家是哪种色调？</strong></div>
                 <div class="subtitle">
                     <span>（您的新居建筑面积：
                     <span class="square">88</span>平方、
@@ -139,17 +142,18 @@
                 </div>
             </div>
             <div class="page3-main page">
-                <div><span class="circle" id="color1"></span>红色</div>
-                <div><span class="circle" id="color2"></span>黄色</div>
-                <div><span class="circle" id="color3"></span>绿色</div>
-                <div><span class="circle" id="color4"></span>天蓝</div>
-                <div><span class="circle" id="color5"></span>褐色</div>
-                <div><span class="circle" id="color6"></span>灰色</div>
-                <div><span class="circle" id="color7"></span>洁白</div>
-                <div><span class="circle" id="color8"></span>酷黑</div>
+                <div id="color1"><span class="circle"></span>红色</div>
+                <div id="color2"><span class="circle"></span>黄色</div>
+                <div id="color3"><span class="circle"></span>绿色</div>
+                <div id="color4"><span class="circle"></span>天蓝</div>
+                <div id="color5"><span class="circle"></span>褐色</div>
+                <div id="color6"><span class="circle"></span>灰色</div>
+                <div id="color7"><span class="circle"></span>洁白</div>
+                <div id="color8"><span class="circle"></span>酷黑</div>
             </div>
             <div class="footer">
-                <div class="match">开始智能匹配</div>
+            	<div class="back"><img src="img/fh.png" width="57" height="26" /></div>
+                <div class="match hidden"><a href="#">开始智能匹配</a></div>
             </div>
         </div>
     </div>

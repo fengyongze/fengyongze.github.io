@@ -1,45 +1,83 @@
-@charset "UTF-8";
-/* line 1, D:/renovation/scss/main.scss */
+/* line 2, D:/renovation/modify/renovation 4/scss/main.scss */
+html,
 body {
+  overflow: hidden;
+  width: 100%;
   background-color: #f2f2f2; }
 
-/* line 5, D:/renovation/scss/main.scss */
+/* line 8, D:/renovation/modify/renovation 4/scss/main.scss */
 div span li {
-  font-family: Arial,Tahoma,'Hiragino Sans GB W3','微软雅黑'; }
+  font-family: Arial,Tahoma,'Hiragino Sans GB W3'; }
 
-/* line 9, D:/renovation/scss/main.scss */
-.header {
-  height: 300px; }
+/* line 12, D:/renovation/modify/renovation 4/scss/main.scss */
+#header {
+  height: 190px; }
 
-/* line 13, D:/renovation/scss/main.scss */
+/* line 16, D:/renovation/modify/renovation 4/scss/main.scss */
+#container {
+  width: 300%;
+  -ms-transition: all 1000ms ease;
+  transition: all 1000ms ease; }
+
+/* line 22, D:/renovation/modify/renovation 4/scss/main.scss */
+.section {
+  float: left;
+  width: 33%; }
+
+/* line 27, D:/renovation/modify/renovation 4/scss/main.scss */
+#section0 {
+  position: relative;
+  height: 350px; }
+
+/* line 32, D:/renovation/modify/renovation 4/scss/main.scss */
+.section:after {
+  clear: both; }
+
+/* line 36, D:/renovation/modify/renovation 4/scss/main.scss */
 .hidden {
   display: none; }
 
-/* line 17, D:/renovation/scss/main.scss */
+/* line 40, D:/renovation/modify/renovation 4/scss/main.scss */
+.title {
+  height: 125px;
+  margin: 0 auto;
+  text-align: center; }
+  /* line 45, D:/renovation/modify/renovation 4/scss/main.scss */
+  .title .main-title {
+    font-size: 26px;
+    text-align: center; }
+  /* line 50, D:/renovation/modify/renovation 4/scss/main.scss */
+  .title .subtitle {
+    font-size: 15px;
+    margin-top: 18px;
+    color: #4c4c4c; }
+
+/* line 57, D:/renovation/modify/renovation 4/scss/main.scss */
 .page1_main {
-  display: flex;
-  justify-content: center; }
-  /* line 21, D:/renovation/scss/main.scss */
+  position: relative;
+  text-align: center; }
+  /* line 61, D:/renovation/modify/renovation 4/scss/main.scss */
   .page1_main > div {
     font-size: 16px;
     line-height: 50px;
+    display: inline-block;
     height: 50px;
     margin-left: 8px;
     text-align: center;
     background-color: #fff; }
-  /* line 30, D:/renovation/scss/main.scss */
+  /* line 71, D:/renovation/modify/renovation 4/scss/main.scss */
   .page1_main .location {
     width: 110px;
     cursor: pointer; }
-  /* line 35, D:/renovation/scss/main.scss */
+  /* line 76, D:/renovation/modify/renovation 4/scss/main.scss */
   .page1_main .house {
     width: 217px; }
-    /* line 38, D:/renovation/scss/main.scss */
+    /* line 79, D:/renovation/modify/renovation 4/scss/main.scss */
     .page1_main .house div {
       position: relative;
       display: inline-block;
       padding: 0 6px 0 4px; }
-      /* line 43, D:/renovation/scss/main.scss */
+      /* line 84, D:/renovation/modify/renovation 4/scss/main.scss */
       .page1_main .house div .up {
         position: absolute;
         top: 5px;
@@ -50,11 +88,11 @@ div span li {
         border-width: 0 5px 8.7px 5px;
         border-style: solid;
         border-color: transparent transparent #f2f2f2 transparent; }
-      /* line 55, D:/renovation/scss/main.scss */
+      /* line 96, D:/renovation/modify/renovation 4/scss/main.scss */
       .page1_main .house div .up:hover {
         border-width: 0 6px 10.4px 6px;
         border-color: transparent transparent #000 transparent; }
-      /* line 60, D:/renovation/scss/main.scss */
+      /* line 101, D:/renovation/modify/renovation 4/scss/main.scss */
       .page1_main .house div .down {
         position: absolute;
         bottom: 5px;
@@ -65,61 +103,203 @@ div span li {
         border-width: 8.7px 5px 0 5px;
         border-style: solid;
         border-color: #f2f2f2 transparent transparent transparent; }
-      /* line 72, D:/renovation/scss/main.scss */
+      /* line 113, D:/renovation/modify/renovation 4/scss/main.scss */
       .page1_main .house div .down:hover {
         border-width: 10.4px 6px 0 6px;
         border-color: #000 transparent transparent transparent; }
-  /* line 79, D:/renovation/scss/main.scss */
+  /* line 120, D:/renovation/modify/renovation 4/scss/main.scss */
   .page1_main .area {
     width: 110px; }
-    /* line 82, D:/renovation/scss/main.scss */
+    /* line 123, D:/renovation/modify/renovation 4/scss/main.scss */
     .page1_main .area input {
-      width: 70px;
-      height: 50px;
+      width: 75px;
+      height: 49px;
+      padding-left: 5px;
       border: 0;
       outline: none; }
-  /* line 90, D:/renovation/scss/main.scss */
+    /* line 131, D:/renovation/modify/renovation 4/scss/main.scss */
+    .page1_main .area .error {
+      outline-style: solid;
+      outline-color: red; }
+  /* line 137, D:/renovation/modify/renovation 4/scss/main.scss */
   .page1_main .go {
     width: 160px;
+    cursor: pointer;
     background-color: #fcec30; }
 
-/* line 96, D:/renovation/scss/main.scss */
+/* line 144, D:/renovation/modify/renovation 4/scss/main.scss */
 .city {
   position: absolute;
   left: 50%;
-  width: 621px;
+  width: 635px;
   margin-top: 8px;
-  margin-left: -306px;
-  background-color: #fff;
-  animation: fide 3s; }
-  /* line 105, D:/renovation/scss/main.scss */
+  margin-left: -313px;
+  animation: fide 3s;
+  background-color: #fff; }
+  /* line 153, D:/renovation/modify/renovation 4/scss/main.scss */
   .city ul {
     margin: 0;
     padding-left: 0; }
-    /* line 109, D:/renovation/scss/main.scss */
+    /* line 157, D:/renovation/modify/renovation 4/scss/main.scss */
     .city ul li {
       padding: 8px 20px;
       list-style: none;
       border-bottom: 1px dashed #e1e1e1; }
-      /* line 114, D:/renovation/scss/main.scss */
+      /* line 162, D:/renovation/modify/renovation 4/scss/main.scss */
       .city ul li span {
         font-size: 14px;
         line-height: 24px;
+        position: relative;
         padding-right: 4px;
-        color: #414141;
         cursor: pointer;
-        position: relative; }
-      /* line 123, D:/renovation/scss/main.scss */
+        color: #414141; }
+      /* line 171, D:/renovation/modify/renovation 4/scss/main.scss */
       .city ul li span:hover {
-        color: #11a5e2;
         top: 1px;
         left: 1px;
-        text-decoration: underline; }
+        text-decoration: underline;
+        color: #11a5e2; }
 
 @keyframes fide {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
+
+@keyframes roll {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+
+/* line 201, D:/renovation/modify/renovation 4/scss/main.scss */
+.page {
+  height: 150px;
+  text-align: center; }
+  /* line 205, D:/renovation/modify/renovation 4/scss/main.scss */
+  .page div {
+    font-size: 14px;
+    display: inline-block;
+    width: 73px;
+    height: 73px;
+    border-radius: 73px;
+    margin-left: 18px;
+    padding: 3px;
+    cursor: pointer;
+    text-align: center; }
+    /* line 216, D:/renovation/modify/renovation 4/scss/main.scss */
+    .page div .circle {
+      display: block;
+      width: 65px;
+      height: 65px;
+      margin-bottom: 12px;
+      border-radius: 65px;
+      animation-fill-mode: backwards;
+      -webkit-animation-fill-mode: backwards; }
+  /* line 226, D:/renovation/modify/renovation 4/scss/main.scss */
+  .page div :hover {
+    transition: all 500ms ease;
+    transform: scale(1.2); }
+  /* line 230, D:/renovation/modify/renovation 4/scss/main.scss */
+  .page .selected {
+    border-width: 1px;
+    border-style: dashed;
+    border-color: #000; }
+  /* line 237, D:/renovation/modify/renovation 4/scss/main.scss */
+  .page #icon1 span, .page #icon2 span, .page #icon3 span, .page #icon4 span, .page #icon5 span, .page #icon6 span, .page #icon7 span {
+    background-image: url(../img/150.png);
+    background-repeat: none;
+    background-size: 100% 100%; }
+  /* line 244, D:/renovation/modify/renovation 4/scss/main.scss */
+  .page .roll {
+    animation: roll 0.5s; }
+  /* line 248, D:/renovation/modify/renovation 4/scss/main.scss */
+  .page .icon1, .page #color1 span {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s; }
+  /* line 253, D:/renovation/modify/renovation 4/scss/main.scss */
+  .page .icon2, .page #color2 span {
+    -webkit-animation-delay: .1s;
+    animation-delay: .1s; }
+  /* line 258, D:/renovation/modify/renovation 4/scss/main.scss */
+  .page .icon3, .page #color3 span {
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s; }
+  /* line 263, D:/renovation/modify/renovation 4/scss/main.scss */
+  .page .icon4, .page #color4 span {
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s; }
+  /* line 268, D:/renovation/modify/renovation 4/scss/main.scss */
+  .page .icon5, .page #color5 span {
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s; }
+  /* line 273, D:/renovation/modify/renovation 4/scss/main.scss */
+  .page .icon6, .page #color6 span {
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s; }
+  /* line 278, D:/renovation/modify/renovation 4/scss/main.scss */
+  .page .icon7, .page #color7 span {
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s; }
+  /* line 284, D:/renovation/modify/renovation 4/scss/main.scss */
+  .page #color1 span {
+    background-color: #f00; }
+  /* line 292, D:/renovation/modify/renovation 4/scss/main.scss */
+  .page #color2 span {
+    background-color: #fcd351; }
+  /* line 300, D:/renovation/modify/renovation 4/scss/main.scss */
+  .page #color3 span {
+    background-color: #acdf7c; }
+  /* line 308, D:/renovation/modify/renovation 4/scss/main.scss */
+  .page #color4 span {
+    background-color: #316cdb; }
+  /* line 316, D:/renovation/modify/renovation 4/scss/main.scss */
+  .page #color5 span {
+    background-color: #aa6b22; }
+  /* line 324, D:/renovation/modify/renovation 4/scss/main.scss */
+  .page #color6 span {
+    background-color: #a6a6a6; }
+  /* line 332, D:/renovation/modify/renovation 4/scss/main.scss */
+  .page #color7 span {
+    background-color: #fff; }
+  /* line 340, D:/renovation/modify/renovation 4/scss/main.scss */
+  .page #color8 span {
+    -webkit-animation-delay: .7s;
+    animation-delay: .7s;
+    background-color: #1c1c1c; }
+
+/* line 348, D:/renovation/modify/renovation 4/scss/main.scss */
+.footer {
+  text-align: center; }
+  /* line 351, D:/renovation/modify/renovation 4/scss/main.scss */
+  .footer .match a {
+    font-size: 16px;
+    line-height: 50px;
+    display: block;
+    width: 160px;
+    height: 50px;
+    margin: auto;
+    text-decoration: none;
+    color: #4c4c4c;
+    border-radius: 3px;
+    background-color: #fcec30; }
+  /* line 364, D:/renovation/modify/renovation 4/scss/main.scss */
+  .footer .match a:hover {
+    color: #000;
+    background: #ffea00; }
+
+/* line 370, D:/renovation/modify/renovation 4/scss/main.scss */
+.back {
+  line-height: 50px;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  padding-left: 25px;
+  text-align: center; }
+
+/* line 379, D:/renovation/modify/renovation 4/scss/main.scss */
+.back:hover {
+  padding-left: 2px;
+  transition: all 300ms; }
 
 /*# sourceMappingURL=main.css.map */

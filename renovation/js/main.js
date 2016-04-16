@@ -19,3 +19,7 @@ requirejs(["pageswitch"], function(pageswitch) {
 requirejs(["select"], function(select) {
 	new select.select();
 });
+requirejs(["select"], function(select) {
+	new select.selection1Color();
+	new select.selection2Color();
+});
