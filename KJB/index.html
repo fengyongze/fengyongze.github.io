@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/index.css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" src="js/vue.js"></script>
+    <title>KJB</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="swiper-container">
+          <div class="swiper-wrapper" >
+            <div class="swiper-slide" v-for="banner in banners">
+              <a href="{{banner.href}}"><img v-bind:src=banner.img alt="" width="100%" height="180px"></a>
+              <p class="desc">{{banner.introduce}}</p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+      </div>
+      <div>
+        <div class="item" v-bind:class="{'active':aerial}" v-on:click="aerialShow">航拍作品</div><div class="item" v-bind:class="{'active':panorama}" v-on:click="panoramaShow">全景作品</div>
+      </div>
+      <ul class="list_box" v-if="aerial">
+        <li v-for="aerialTodo in aerialTodos" class="list">
+          <a href="{{aerialTodo.href}}" class="href">
+            <div class="imageBox">
+              <img v-bind:src=aerialTodo.img>
+            </div>
+            <div class="contextBox">
+              <p class="title">{{aerialTodo.title}}</p>
+              <p class="context">{{ aerialTodo.text }}</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <ul class="list_box" v-else>
+        <li v-for="panoramaTodo in panoramaTodos" class="list">
+          <a href="{{panoramaTodo.href}}" class="href">
+            <div class="imageBox">
+              <img v-bind:src=panoramaTodo.img>
+            </div>
+            <div class="contextBox">
+              <p class="title">{{panoramaTodo.title}}</p>
+              <p class="context">{{ panoramaTodo.text }}</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script src="js/swiper-3.4.2.min.js"></script>
+    <script type="text/javascript">
+    new Vue({
+      el: '#app',
+      data: {
+        /*
+        *从这里开始你可以修改的内容
+        *
+        */
+        //banners表示轮播图的数据，img表示轮播图的图片,图片放在img的文件里，href表示点击跳转公众号文章url，introduce表示轮播图的介绍
+        banners: [
+          { img: 'img/0.jpg',href:'http://mp.weixin.qq.com/s?__biz=MzIyNjU4NjEzOA==&mid=2247484192&idx=1&sn=5bb798497ba1ffbf508f2251a3517ea6&scene=19#wechat_redirect',introduce:'航拍影像|海岛航拍'},
+          { img: 'img/1.jpg',href:'http://mp.weixin.qq.com/s?__biz=MzIyNjU4NjEzOA==&mid=2247484192&idx=1&sn=5bb798497ba1ffbf508f2251a3517ea6&scene=19#wechat_redirect',introduce:'航拍影像|海岛航拍'}
+        ],
+        //aerialTodos表示航拍作品的数据，img表示航拍作品的图片，图片放在img的文件里，href表示点击跳转公众号文章url，title表示航拍作品的标题即黑色字体，text表示航拍作品的文字介绍即标题下面的灰色字体
+        aerialTodos: [
+          { img: 'img/0.jpg',title:'航拍影像｜海岛航拍',text: '吴孙子的爷爷',href:'http://mp.weixin.qq.com/s?__biz=MzI2NDQ2Mjg1Nw==&mid=100000039&idx=1&sn=e6194aac2d64148486e4741952eb94c2&scene=18#wechat_redirect' },
+          { img: 'img/0.jpg',title:'航拍影像｜海岛航拍',text: '我叫冯爷爷',href:'http://mp.weixin.qq.com/s?__biz=MzI2NDQ2Mjg1Nw==&mid=100000045&idx=1&sn=520a564cc790fa4e31573c0d7e668c0d&scene=18#wechat_redirect' },
+          { img: 'img/0.jpg',title:'航拍影像｜海岛航拍',text: '你们都是我孙子' ,href:'http://www.baidu.com'},
+          { img: 'img/0.jpg',title:'航拍影像｜海岛航拍',text: '你们都是我孙子' ,href:'http://www.baidu.com'},
+          { img: 'img/0.jpg',title:'航拍影像｜海岛航拍',text: '你们都是我孙子' ,href:'http://www.baidu.com'},
+          { img: 'img/0.jpg',title:'航拍影像｜海岛航拍',text: '你们都是我孙子' ,href:'http://www.baidu.com'}
+        ],
+          //panoramaTodos表示全景作品的数据，img表示全景作品的图片，图片放在img的文件里，href表示点击跳转公众号文章url，title表示全景作品的标题即黑色字体，text表示全景作品的文字介绍即标题下面的灰色字体
+        panoramaTodos:[
+          { img: 'img/1.jpg',title:'航拍后期｜DaVinci Resolve调色对比',text: '吴孙子的爷爷',href:'http://mp.weixin.qq.com/s?__biz=MzI2NDQ2Mjg1Nw==&mid=100000039&idx=1&sn=e6194aac2d64148486e4741952eb94c2&scene=18#wechat_redirect' },
+          { img: 'img/1.jpg',title:'航拍后期｜DaVinci Resolve调色对比',text: '我叫冯爷爷',href:'http://mp.weixin.qq.com/s?__biz=MzI2NDQ2Mjg1Nw==&mid=100000045&idx=1&sn=520a564cc790fa4e31573c0d7e668c0d&scene=18#wechat_redirect' },
+          { img: 'img/1.jpg',title:'航拍后期｜DaVinci Resolve调色对比',text: '你们都是我孙子', href:'http://www.baidu.com'}
+        ],
+        /*
+        *可以修改的内容到这里结束
+        *
+        */
+        aerial:true,
+        panorama:false
+      },
+      methods: {
+        aerialShow: function(){
+          this.aerial=true;
+          this.panorama=false;
+        },
+        panoramaShow: function(){
+          this.aerial=false;
+          this.panorama=true;
+        }
+      }
+    })
+    </script>
+    <script type="text/javascript">
+    var mySwiper = new Swiper ('.swiper-container', {
+      direction: 'horizontal',
+      loop: true,
+      autoplay : 5000,
+      autoplayDisableOnInteraction : false,
+      // 如果需要分页器
+      pagination: '.swiper-pagination'
+    })
+    </script>
+  </body>
+</html>
